@@ -14,6 +14,11 @@ from flask import render_template, request, redirect, url_for
 # Routing for your application.
 ###
 
+@app.route('/profile/')
+def profile():
+    """Render the website's profile page."""
+    return render_template('profile.html')
+
 @app.route('/')
 def home():
     """Render website's home page."""
